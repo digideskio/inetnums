@@ -15,6 +15,11 @@ setup(
     keywords=["whois", "inetnum"],
     install_requires=["pycurl>=7.19.0"],
     package_data={'': ['requirements.txt', 'LICENSE', 'README.md']},
+    entry_points={
+        'console_scripts': [
+            'inetnums=inetnums.__main__:__run__',
+        ]
+    },
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
